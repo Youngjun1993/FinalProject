@@ -22,6 +22,7 @@ public class OrderTblVO {
 	private int pluspoint;
 	private int usepoint;
 	private String usecoupon;
+	private int couponprice;
 	
 	private int deliveryprice;
 	private int totalprice;
@@ -32,7 +33,9 @@ public class OrderTblVO {
 	
 	private String status="";
 	private String changestatus="";	
+	
 	private String pname;
+	private int productcnt;
 	
 	private String username;
 	private String tel;
@@ -50,12 +53,6 @@ public class OrderTblVO {
 	private String searchWord="";	
 	
 	
-	public String getPname() {
-		return pname;
-	}
-	public void setPname(String pname) {
-		this.pname = pname;
-	}
 	public int getOrderno() {
 		return orderno;
 	}
@@ -152,6 +149,12 @@ public class OrderTblVO {
 	public void setUsecoupon(String usecoupon) {
 		this.usecoupon = usecoupon;
 	}
+	public int getCouponprice() {
+		return couponprice;
+	}
+	public void setCouponprice(int couponprice) {
+		this.couponprice = couponprice;
+	}
 	public int getDeliveryprice() {
 		return deliveryprice;
 	}
@@ -193,6 +196,18 @@ public class OrderTblVO {
 	}
 	public void setChangestatus(String changestatus) {
 		this.changestatus = changestatus;
+	}
+	public String getPname() {
+		return pname;
+	}
+	public void setPname(String pname) {
+		this.pname = pname;
+	}
+	public int getProductcnt() {
+		return productcnt;
+	}
+	public void setProductcnt(int productcnt) {
+		this.productcnt = productcnt;
 	}
 	public String getUsername() {
 		return username;
